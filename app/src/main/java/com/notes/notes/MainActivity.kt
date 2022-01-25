@@ -33,5 +33,4 @@ class MainActivity : AppCompatActivity() {
         _binding = null
     }
 
-//    test git
 }
