@@ -79,5 +79,4 @@ class MainFragment : Fragment() {
         }
         return super.onOptionsItemSelected(item)
     }
-
 }

@@ -3,7 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="50dp"
+    android:background="@color/white"
     tools:context=".screens.note.NoteFragment">
 
     <TextView
@@ -15,6 +20,7 @@
         android:lines="1"
         android:textColor="@color/teal_700"
         android:textSize="@dimen/app_large_text"
+        app:layout_constraintBottom_toTopOf="@+id/note_text"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,6 +34,7 @@
         android:layout_margin="@dimen/app_margin"
         android:textColor="@color/teal_700"
         android:textSize="@dimen/app_normal_text"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/note_name"

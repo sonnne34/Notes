@@ -4,18 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     tools:context=".screens.start.StartFragment">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/note"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/app_margin"
+        android:background="@color/white"
+        android:padding="16dp"
         android:text="@string/start_label"
         android:textSize="@dimen/app_large_text"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/icon" />
 
     <Button
         android:id="@+id/btn_room"
@@ -43,8 +58,11 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/app_margin"
         android:autofillHints=""
+        android:background="@color/white"
+        android:gravity="center"
         android:hint="@string/input_email"
         android:inputType="textEmailAddress"
+        android:padding="10dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,8 +74,11 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/app_margin"
         android:autofillHints=""
+        android:background="@color/white"
+        android:gravity="center"
         android:hint="@string/input_password"
         android:inputType="textPassword"
+        android:padding="10dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,6 +91,7 @@
         android:layout_margin="@dimen/app_margin"
         android:text="@string/btn_login"
         android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_password" />

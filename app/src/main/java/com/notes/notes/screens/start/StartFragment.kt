@@ -30,7 +30,7 @@ class StartFragment : Fragment() {
 
         mViewModel = ViewModelProvider(this).get(StartFragmentViewModel::class.java)
 
-        if (AppPreference.getInitUser()){
+        if (AppPreference.getInitUser()) {
             mViewModel.initDataBase(AppPreference.getTypeBD()) {
                 APP_ACTIVITY.navController.navigate(R.id.action_startFragment_to_mainFragment)
             }

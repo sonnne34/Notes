@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.notes.notes.R
 import com.notes.notes.models.AppNote
 
-class MainAdapter  : RecyclerView.Adapter<MainAdapter.MainHolder>() {
+class MainAdapter : RecyclerView.Adapter<MainAdapter.MainHolder>() {
 
     private var mListNotes = emptyList<AppNote>()
 

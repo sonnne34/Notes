@@ -45,7 +45,7 @@ class AddNewNoteFragment : Fragment() {
                 log("до insert")
                 mViewModel.insert(AppNote(name = name, text = text)) {
                     log("insert")
-                    requireActivity().runOnUiThread {APP_ACTIVITY.navController.navigate(R.id.action_addNewNoteFragment_to_mainFragment)}
+                    requireActivity().runOnUiThread { APP_ACTIVITY.navController.navigate(R.id.action_addNewNoteFragment_to_mainFragment) }
                     log(" APP_ACTIVITY.navController.navigate(R.id.action_addNewNoteFragment_to_mainFragment)")
                 }
             }

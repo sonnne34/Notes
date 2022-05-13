@@ -12,7 +12,7 @@ class AddNewFragmentViewModel(application: Application) : AndroidViewModel(appli
 
     fun insert(note: AppNote, onSuccess: () -> Unit) =
         viewModelScope.launch(Dispatchers.IO) {
-            REPOSITORY.insert(note){
+            REPOSITORY.insert(note) {
                 onSuccess()
             }
         }

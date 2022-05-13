@@ -2,7 +2,7 @@
     <string name="app_name">Мои заметки</string>
     <string name="btn_add_note">Добавить</string>
     <string name="start_label">Какие заметки открыть?</string>
-    <string name="btn_room">На устройство</string>
+    <string name="btn_room">На устройстве</string>
     <string name="title">Мои заметки</string>
     <string name="toast_enter_name">Название</string>
     <string name="btn_firebase">На сервере</string>
@@ -10,4 +10,6 @@
     <string name="input_password">Введите пароль</string>
     <string name="btn_login">Войти</string>
     <string name="toast_wrong_enter">Введите e-mail и пароль</string>
+    <string name="et_header">назовите заметку</string>
+    <string name="et_text">заметка</string>
 </resources>
