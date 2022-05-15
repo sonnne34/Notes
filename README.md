@@ -1,5 +1,5 @@
 # Notes
-MVVM, Coroutines, Room, Firebase, Navigation Graph, Live Data, SharedPreferences
+MVVM, Coroutines, Room, Firebase, Navigation Graph, Live Data, SharedPreferences...
 
 
 ![m_Notes1](https://user-images.githubusercontent.com/60262104/168335097-5f3252bc-6594-4af4-95e8-3b902e7020aa.png)
